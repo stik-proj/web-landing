@@ -6,9 +6,440 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
     />
+    <link rel="stylesheet" type="text/css" href="./static/css/ui/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css"
+    />
+    <link href="http://fonts.cdnfonts.com/css/montserrat" rel="stylesheet" />
+
     <title>STAIKA</title>
   </head>
   <body>
+    <header class="header">
+      <div class="inner-contents">
+        <h1 class="logo" data-menuanchor="firstPage">
+          <a href="#firstPage">Staika</a>
+        </h1>
+        <div class="header-menu">
+          <button class="btn m-gnb-menu _openMobileGnbMenu">
+            <!-- <img src="./static/img/ico_m_gnb_menu.svg" alt="" /> -->
+            <svg
+              width="19"
+              height="14"
+              viewBox="0 0 19 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 13H13" stroke="white" />
+              <path d="M0 7H18.5" stroke="white" />
+              <path d="M0 1H13" stroke="white" />
+            </svg>
+          </button>
+          <nav class="gnb">
+            <ul id="menu">
+              <li data-menuanchor="secondPage">
+                <a href="#secondPage">Vision</a>
+              </li>
+              <li data-menuanchor="3rdPage">
+                <a href="#3rdPage">Problem</a>
+              </li>
+              <li data-menuanchor="4thpage">
+                <a href="#4thpage">Ecosystem</a>
+              </li>
+              <li data-menuanchor="5thPage"><a href="#5thPage">Roadmap</a></li>
+              <li data-menuanchor="6thPage">
+                <a href="#6thPage">Experience</a>
+              </li>
+              <li data-menuanchor="lastPage">
+                <a href="#lastPage">Community</a>
+              </li>
+            </ul>
+            <button class="btn btn-close _closeMobileGnbMenu">
+              <i class="mdi mdi-close"></i>
+            </button>
+          </nav>
+          <div class="translate">
+            <button type="button" class="btn _toggleTranslateMenu">
+              Language
+              <i class="mdi mdi-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="menu">
+              <ul>
+                <li class="current"><a href="">Korean</a></li>
+                <li><a href="">English</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="fullpage">
+      <section class="section section00" id="section0">
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="inner-contents">
+          <div class="slogun">
+            <p class="tit">
+              Decentralized<br />
+              Assets,<br />
+              Integrated <br />
+              Management
+            </p>
+            <p class="desc">
+              스타이카는 다양한 토큰화 자산의 투자를<br />
+              하나로 연결한 통합 디지털 자산운용 플랫폼입니다
+            </p>
+          </div>
+        </div>
+
+        <img class="shape01" src="./static/img/bg_visual_01.svg" alt="" />
+        <img class="shape02" src="./static/img/bg_visual_02.svg" alt="" />
+        <!-- <img class="shape02" src="./static/img/test3.svg" alt="" />
+        <img class="coin01" src="./static/img/img_ripple.svg" alt="" />
+        <img class="coin02" src="./static/img/img_etherium.svg" alt="" />
+        <img class="coin03" src="./static/img/img_bitcoin.svg" alt="" />
+        <img class="coin04" src="./static/img/img_solana.svg" alt="" /> -->
+      </section>
+      <section class="section section01" id="section1">
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="inner-contents">
+          <p class="section-menu">Vision</p>
+          <p class="section-title">독자적으로 빛나는 점들을 연결합니다.</p>
+          <p class="desc">
+            P2E, NFT, 그리고 Security Token은 다가오는 메타버스의 젖과 꿀과도
+            같습니다. 하지만<br />
+            투자의 영역에서 각 디지털 자산들은 개별적으로 운용되며 시너지를 잃고
+            위기 상황 또한 햇지하지 못했습니다.<br />
+            스타이카는 이런 독립적으로 점들을 하나의 선을 이어 공공히 하기로
+            했습니다. 탈중앙화된 블록체인이 주는<br />
+            여러 강점들을 스타이카의 서비스로 연결해 더욱 안정적이고 효율적인
+            투자환경을 구성하였습니다.
+          </p>
+        </div>
+      </section>
+      <section
+        class="section section02 fp-auto-height-responsive"
+        id="section2"
+      >
+        <div class="inner-contents">
+          <p class="section-menu">Problem</p>
+          <p class="section-title">
+            스타이카는<br />
+            이런 문제점들을<br />
+            주목합니다.
+          </p>
+          <div class="problem_box box01">
+            <img src="./static/img/ico_problem_01.svg" alt="" />
+            <p class="tit">불편한 기억</p>
+            <p class="desc">
+              기존의 암호화폐 전자지갑들은 탈중앙화 방식을 기반에 둔 UX로 인해
+              일반 대중이 이해하고 사용하기에는 어렵습니다.
+            </p>
+          </div>
+          <div class="problem_box box02">
+            <img src="./static/img/ico_problem_02.svg" alt="" />
+            <p class="tit">불안한 투자환경</p>
+            <p class="desc">
+              누구나 참여할 수 있는 오픈형 투자 플랫폼에서는 다양한 분할
+              소유주들로 인한 리스크가 발생하였습니다.
+            </p>
+          </div>
+          <div class="problem_box box03">
+            <img src="./static/img/ico_problem_03.svg" alt="" />
+            <p class="tit">잃어버린 재미</p>
+            <p class="desc">
+              화제성에 올라탄 P2E 게임들의 단순한 설계와 낮은 게임성으로 인해
+              이용 자의 피로도가 높아졌습니다.
+            </p>
+          </div>
+          <div class="problem_box box04">
+            <img src="./static/img/ico_problem_04.svg" alt="" />
+            <p class="tit">폭락한 가치</p>
+            <p class="desc">
+              공인된 가치평가 없이 단순한 인기에 기대어 판매된 아트워크의 가치는
+              곧 폭락했습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section section03" id="section3">
+        <div class="inner-contents align-center">
+          <p class="section-menu">Ecosystem</p>
+          <p class="section-title">
+            이어진 선을 모아 유연하고 안정적인 면을 만듭니다.
+          </p>
+          <p class="section-desc">
+            각 독립된 가치들을 연결하는 스타이카의 서비스들이 모여 고객이 마음껏
+            성장할 수 있는 플랫폼으로 완성됩니다.
+          </p>
+          <div class="eco_card_list">
+            <ul class="grid">
+              <li class="grid-item">
+                <div>
+                  <p class="tit">사용자 편의 중심의<br />디지털 월렛</p>
+                  <img src="./static/img/ico_eco_shape01.svg" alt="" />
+                </div>
+              </li>
+              <li class="grid-item">
+                <div>
+                  <p class="tit">
+                    본연의 재미에<br />
+                    충실한 P2E 게임 플랫폼
+                  </p>
+                  <img src="./static/img/ico_eco_shape02.svg" alt="" />
+                </div>
+              </li>
+              <li class="grid-item">
+                <div>
+                  <p class="tit">
+                    가치가 확립된<br />
+                    M2E들로 구성된<br />
+                    NFT 마켓
+                  </p>
+                  <img src="./static/img/ico_eco_shape03.svg" alt="" />
+                </div>
+              </li>
+              <li class="grid-item">
+                <div>
+                  <p class="tit">
+                    선별된<br />
+                    투자자들만의<br />
+                    안전한 STO 거래소
+                  </p>
+                  <img src="./static/img/ico_eco_shape04.svg" alt="" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section section04" id="section4">
+        <div class="section-inner">
+          <div class="inner-contents">
+            <p class="section-menu">Roadmap</p>
+            <p class="section-title">
+              각자 열심히, <br />
+              나란히 한 방향으로
+            </p>
+            <p class="section-desc">
+              투자와 블록체인의 전문가들이 함께 걷고 있습니다.
+            </p>
+            <div class="roadmap">
+              <div class="inner">
+                <p class="year">2022</p>
+                <div class="quarter">
+                  <ul class="list">
+                    <li>
+                      <p class="tit">Q1</p>
+                      <ul class="quarter_list short">
+                        <li>- 팀 빌딩 및 프로젝트 시작</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p class="tit">Q3</p>
+                      <ul class="quarter_list">
+                        <li>- STIKA 토큰 및 메인앱(월렛) 출시</li>
+                        <li>- 거래소 상장</li>
+                        <li>- 구성원 추가 및 팀 분할</li>
+                        <li>- P2E게임 개발 착수</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="inner reverse">
+                <p class="year">2023</p>
+                <div class="quarter">
+                  <ul class="list">
+                    <li>
+                      <p class="tit">Q1</p>
+                      <ul class="quarter_list">
+                        <li>- P2E 게임 베타 테스트 시작</li>
+                        <li>- M2E NFT 스토어 개발 착수</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p class="tit">Q2</p>
+                      <ul class="quarter_list">
+                        <li>- P2E 게임 정식오픈</li>
+                        <li>- M2E NFT 스토어 오픈</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p class="tit">Q3</p>
+                      <ul class="quarter_list none">
+                        <li>- STO 거래소 개발 시작</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="inner">
+                <p class="year">2024</p>
+                <div class="quarter">
+                  <ul class="list">
+                    <li>
+                      <p class="tit">Q1</p>
+                      <ul class="quarter_list">
+                        <li>- P2E 게임 콘텐츠 업데이트</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p class="tit">Q2</p>
+                      <ul class="quarter_list short">
+                        <li>- STO 거래소 오픈</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section05" id="section5">
+        <div class="inner-contents align-center">
+          <p class="section-menu">Experience</p>
+          <p class="section-title">스타이카 만나보기</p>
+          <p class="section-desc">
+            좀 더 가까이 스타이카를 만나볼 수 있습니다.
+          </p>
+          <div class="grid">
+            <a
+              href="https://staika-1.gitbook.io/staika/"
+              target="_blank"
+              class="grid-item"
+            >
+              <span class="tit">스타이카 토큰 백서</span>
+              <em>바로가기 &gt;</em>
+            </a>
+
+            <a href="" class="grid-item">
+              <span class="tit">모바일 이지 월렛</span>
+              <em>바로가기 &gt;</em>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section section06 fp-auto-height" id="section6">
+        <div class="inner-contents pd">
+          <div>
+            <p class="section-menu">Community</p>
+            <p class="section-title">
+              궁금한 이야기, <br />
+              새로운 소식
+            </p>
+            <p class="section-desc">당신의 참여를 기다리고 있습니다.</p>
+          </div>
+          <div>
+            <ul class="community_list">
+              <li>
+                <a href="https://twitter.com/staika_official" target="_blank"
+                  ><img src="./static/img/ico_twitter_orange.svg" alt="" />
+                  <div>
+                    <p class="name">
+                      Twitter
+                      <i class="mdi mdi-arrow-right" aria-hidden="true"></i>
+                    </p>
+                    <p>스타이카의 최신 뉴스와 업데이트를 받아보세요.</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/Staika_official" target="_blank"
+                  ><img src="./static/img/ico_telegram_orange.svg" alt="" />
+                  <div>
+                    <p class="name">
+                      Telegram : Channel
+                      <i class="mdi mdi-arrow-right" aria-hidden="true"></i>
+                    </p>
+                    <p>
+                      텔레그램에서 스타이카의 최신 뉴스와 업데이트를 받아보세요.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/Staika_info" target="_blank"
+                  ><img src="./static/img/ico_telegram_orange.svg" alt="" />
+                  <div>
+                    <p class="name">
+                      Telegram : Group
+                      <i class="mdi mdi-arrow-right" aria-hidden="true"></i>
+                    </p>
+                    <p>
+                      텔레그램에서 같은 관심을 가진 사람들과 자유롭게 이야기
+                      나눠보세요.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://discord.gg/V4AjxtJp7C" target="_blank"
+                  ><img src="./static/img/ico_discord_orange.svg" alt="" />
+                  <div>
+                    <p class="name">
+                      Discord
+                      <i class="mdi mdi-arrow-right" aria-hidden="true"></i>
+                    </p>
+                    <p>
+                      스타이카 생태계를 지탱하는 기술이나 사업 방향에 대해
+                      궁금하신가요? 스타이카의 사업 담당자와 개발팀이 직접 답해
+                      드립니다.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="inner-contents">
+            <div>
+              <img src="./static/img/img_footer_logo.png" alt="" />
+              <ul>
+                <li>
+                  <a href="https://twitter.com/staika_official" target="_blank"
+                    ><img src="./static/img/ico_twitter_gray.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://discord.gg/V4AjxtJp7C" target="_blank"
+                    ><img src="./static/img/ico_discord_gray.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://t.me/Staika_official" target="_blank"
+                    ><img src="./static/img/ico_telegram_gray.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <p>
+              이 웹사이트는 EZTECHFIN 에서 관리합니다. 이 웹사이트의 내용과
+              의견은 EZTECHFIN 것입니다. 이지테크핀(EZTECHFIN)은 대중에게
+              암호화폐 관련 서비스 링크를 제공합니다.
+            </p>
+            <p>
+              EZTECHFIN은 이러한 웹사이트가 제공하는 정보가 정확하고 완전하며
+              최신 정보임을 임증하지 않습니다. EZTECHFIN에서는 해당 콘텐츠에
+              대한 책임을 지지않으며, 이러한 웹사이트에 포함된 정보의 사용, 참조
+              또는 의존으로 인해 발생 하는 모든 종류의 손해에 대한 책임을
+              명시적으로 거부합니다.
+            </p>
+            <p class="copy">STAIKA 는 EZTECHFIN 의 등록 상표입니다.</p>
+          </div>
+        </div>
+      </section>
+    </div>
     <script src="./static/js/lib/jquery-3.6.0.min.js"></script>
+    <script src="./static/js/lib/jquery.fullpage.min.js"></script>
+    <script src="./static/js/lib/scrolloverflow.js"></script>
+    <script src="./static/js/lib/masonry.pkgd.min.js"></script>
+    <script src="./static/js/ui/common.js"></script>
+    <script type="text/javascript"></script>
   </body>
 </html>
