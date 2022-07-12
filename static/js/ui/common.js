@@ -64,8 +64,8 @@ ui.page.common.prototype = {
     $(document).ready(function () {
       $("#fullpage").fullpage({
         sectionsColor: [
+          "",
           "#000",
-          "#FF7922",
           "#fff",
           "#fff",
           "#fff",
