@@ -1,7 +1,7 @@
 /* 폰트 */
-/* @import "./font.css"; */
+@import "/static/css/ui/font.css";
 /* 공통요소 */
-@import "./reset.css";
+@import "/static/css/ui/reset.css";
 /* 페이지 */
-@import "../lib/jquery.fullpage.min.css";
-@import "./page.css";
+@import "/static/css/lib/jquery.fullpage.min.css";
+@import "/static/css/ui/page.css";
