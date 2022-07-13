@@ -205,6 +205,7 @@
   animation: 1s showUp forwards ease-in-out;
   margin-top: 100px;
   animation-delay: 0.2s;
+
   z-index: 2;
 }
 .shape02 {
