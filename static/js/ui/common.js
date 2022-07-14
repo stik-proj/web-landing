@@ -83,7 +83,12 @@ ui.page.common.prototype = {
           "lastPage",
         ],
         menu: "#menu",
+        slidesNavigation: true,
+        slidesToSections: true,
+        bigSectionsDestination: top,
+
         scrollingSpeed: 1000,
+
         scrollOverflow: true,
         afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
           console.log(

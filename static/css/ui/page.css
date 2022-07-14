@@ -32,6 +32,48 @@
 .txt-white {
   color: #fff !important;
 }
+@media only screen and (min-width: 1024px) and (max-height: 1000px) {
+  .section00 .inner-contents {
+    transform: translateY(0) !important;
+  }
+  .section00 .dot,
+  .section00 .line,
+  .section00 .scroll_text {
+    display: none;
+  }
+  /* .active.section,
+  .active.section .fp-tableCell,
+  .active.section .fp-scrollable,
+  .active.section .fp-scroller {
+    min-height: 1000px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .active-container .section01 .inner-contents {
+    top: 0;
+  } */
+  /* .section00 {
+    height: auto !important;
+  } */
+}
+@media only screen and (min-width: 1024px) and (max-height: 600px) {
+  .section00 .inner-contents,
+  .section01 .inner-contents {
+    transform: scale(0.5) !important;
+  }
+  .section02 .inner-contents,
+  .section03 .inner-contents {
+    padding: 5rem 2rem 10rem;
+  }
+  .section02 .inner-contents,
+  .section02 .fp-scrollable {
+    width: 100%;
+  }
+  .section02 .problem_box {
+    position: relative;
+  }
+}
 @media only screen and (max-width: 426px) {
   .m-block {
     display: block;
@@ -327,19 +369,21 @@
 }
 .section01 .inner-contents {
   position: relative;
-  top: 22%;
+  top: 30%;
   transform: translateY(200px);
   opacity: 0;
   transition: 0.5s all ease-in-out;
 }
 @media only screen and (max-width: 1024px) {
   .section01 > div {
-    padding-top: 50%;
+    padding-top: 10%;
   }
+
   .section01 .inner-contents {
     margin-top: 0;
   }
 }
+
 .section01 .section-menu {
   transition: all 1s;
 }
@@ -791,13 +835,7 @@
   .translate .btn {
     letter-spacing: 0.5px;
   }
-  .section00 .tit {
-    font-size: 11vw;
-  }
 
-  .section00 .sub_tit {
-    font-size: 6vw;
-  }
   .header-menu .m-gnb-menu {
     order: 3;
   }
@@ -1128,11 +1166,11 @@
   background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 .active-container .section01 .dot {
-  top: 20%;
+  top: 27%;
   opacity: 1;
 }
 .active-container .section01 .line {
-  top: 20%;
+  top: 27%;
   opacity: 1;
   transition-delay: 0.2s;
   animation: 0.5s initLine;
@@ -1142,10 +1180,18 @@
 }
 @media only screen and (max-width: 1024px) {
   .active-container .section01 .dot {
-    top: 38%;
+    top: 34%;
   }
   .active-container .section01 .line {
-    top: 38%;
+    top: 34%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .active-container .section01 .dot {
+    top: 30%;
+  }
+  .active-container .section01 .line {
+    top: 30%;
   }
 }
 .fp-viewing-firstPage .section01 .dot {
