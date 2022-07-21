@@ -1,10 +1,10 @@
 /* 폰트 */
-@import "/static/css/ui/font.css";
+/* @import "/static/css/ui/font.css";
 @import "/static/css/ui/reset.css";
 @import "/static/css/lib/jquery.fullpage.min.css";
-@import "/static/css/ui/page.css";
+@import "/static/css/ui/page.css"; */
 
-/* @import "font.css";
+@import "font.css";
 @import "reset.css";
 @import "../lib/jquery.fullpage.min.css";
-@import "page.css"; */
+@import "page.css";
