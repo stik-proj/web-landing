@@ -798,6 +798,13 @@
   line-height: 1.714rem;
   color: #939393;
 }
+.footer .inner-contents ul li a {
+  display: inline-block;
+  padding-bottom: 1px;
+  color: #939393;
+  line-height: 1.1;
+  border-bottom: 1px solid #939393;
+}
 .footer .inner-contents ul li + li {
   margin-left: 1rem;
   padding-left: 1rem;
