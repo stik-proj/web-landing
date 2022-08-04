@@ -102,7 +102,7 @@
   margin-top: 1.6rem;
   font-size: 1.435rem;
   letter-spacing: 0.4px;
-  line-height: 2.857rem;
+  line-height: 1.957rem;
   color: #4d4d4d;
 }
 @media only screen and (max-width: 1024px) {
@@ -417,7 +417,7 @@
 .section02 .bg01 {
   position: absolute;
   left: 0%;
-  top: 60%;
+  top: 42%;
   opacity: 0.7;
 }
 @media only screen and (max-width: 1024px) {
@@ -552,8 +552,8 @@
 }
 .eco_card_list ul li div .tit {
   font-weight: 600;
-  font-size: 1.514rem;
-  line-height: 2.285rem;
+  font-size: 1.314rem;
+  line-height: 1.885rem;
 }
 .eco_card_list ul li div img {
   position: absolute;
