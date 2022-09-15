@@ -706,7 +706,6 @@
   padding-left: 0;
 }
 .section05 .grid .grid-item:nth-child(2) {
-  pointer-events: none;
   background: linear-gradient(180deg, #fc9e61 0%, #ffd89d 100%);
 }
 .section05 .grid .grid-item span {
