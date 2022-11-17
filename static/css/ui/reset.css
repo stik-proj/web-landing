@@ -82,7 +82,7 @@ legend {
   border: 0 none;
   margin: 0;
   padding: 0;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
   vertical-align: top;
 }
 
@@ -285,4 +285,8 @@ select {
   font-weight: 300;
 
   color: #999;
+}
+
+.pb50 {
+  padding-bottom: 50px;
 }
