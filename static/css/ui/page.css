@@ -1,5 +1,15 @@
 @charset "UTF-8";
-
+.scrollable-content {
+  background: white;
+  overflow: scroll;
+  margin: 0 auto;
+  width: 90%;
+}
+#section6 .fp-scroller {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
 .btn {
   display: inline-block;
   appearance: none;
@@ -1022,6 +1032,7 @@
 .section06 .teamNav > ul li:last-child::after {
   display: none;
 }
+.section06 .teamNav > ul li.current a,
 .section06 .teamNav > ul li a:hover {
   color: #fa7f3b;
 }
