@@ -285,7 +285,7 @@
 .section00 .inner-contents {
   position: relative;
   text-align: center;
-  transform: translateY(-30%);
+  /* transform: translateY(-30%); */
 }
 .section00 .slogun {
   position: relative;
@@ -371,11 +371,14 @@
     background-size: 300% auto;
   }
 }
-.section01 > div {
+.section01 .fp-scrollable {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   text-align: center;
+}
+.section01 .fp-scroller {
+  height: 100%;
 }
 .section01 .inner-contents {
   position: relative;
@@ -933,6 +936,13 @@
   }
   .section05 .grid .grid-item:nth-child(1) > div {
     padding: 2.3rem 1.4rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .section05 .grid .grid-item:nth-child(1) {
+    max-width: 100%;
+    max-height: 167px;
+    margin: 0;
   }
 }
 .section05 .grid .grid-item:nth-child(2) {
@@ -1511,7 +1521,7 @@
     width: 100% !important;
   }
   .section05 .grid .grid-item {
-    /* width: 46%;
+    /* width: 46%;*/
   }
   .section07 {
   }
@@ -1610,110 +1620,109 @@
 }
 .fp-viewing-firstPage .section00.active.fp-completely .line {
   /* animation: 1s showDown infinite; */
-  }
-  .fp-viewing-firstPage .section00.active.fp-completely .line {
-    animation: 2s showingLine forwards;
-    animation-delay: 1s;
-  }
-  .fp-viewing-secondPage .section00 .dot {
-    top: 100%;
-  }
-  .fp-viewing-secondPage .section00 .line {
-    opacity: 1;
-    transition-delay: 0.2s;
-    top: 100%;
-  }
-  .fp-viewing-secondPage .section00 .scroll_text {
-    opacity: 0;
-  }
-  .section01 .dot {
-    top: 0;
-    opacity: 0;
-    background: #000;
-  }
-  .section01 .line {
-    margin-top: 0;
-    top: 0;
-    opacity: 0;
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  }
+}
+.fp-viewing-firstPage .section00.active.fp-completely .line {
+  animation: 2s showingLine forwards;
+  animation-delay: 1s;
+}
+.fp-viewing-secondPage .section00 .dot {
+  top: 100%;
+}
+.fp-viewing-secondPage .section00 .line {
+  opacity: 1;
+  transition-delay: 0.2s;
+  top: 100%;
+}
+.fp-viewing-secondPage .section00 .scroll_text {
+  opacity: 0;
+}
+.section01 .dot {
+  top: 0;
+  opacity: 0;
+  background: #000;
+}
+.section01 .line {
+  margin-top: 0;
+  top: 0;
+  opacity: 0;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+.active-container .section01 .dot {
+  top: 27%;
+  opacity: 1;
+}
+.active-container .section01 .line {
+  top: 27%;
+  opacity: 1;
+  transition-delay: 0.2s;
+  animation: 0.5s initLine;
+  animation-delay: 1s;
+  transform-origin: top;
+  animation-fill-mode: forwards;
+}
+@media only screen and (max-width: 1024px) {
   .active-container .section01 .dot {
-    top: 27%;
-    opacity: 1;
+    top: 34%;
   }
   .active-container .section01 .line {
-    top: 27%;
+    top: 34%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .active-container .section01 .dot {
+    top: 26%;
+  }
+  .active-container .section01 .line {
+    top: 26%;
+  }
+}
+.fp-viewing-firstPage .section01 .dot {
+  top: 0;
+}
+.fp-viewing-firstPage.active-container .section00 .scroll_text {
+  opacity: 0;
+}
+.fp-viewing-firstPage.active-container .section00 .dot {
+  top: 100%;
+  opacity: 0;
+}
+@keyframes initLine {
+  0% {
+    height: 173px;
+  }
+
+  100% {
+    height: 0;
+  }
+}
+@keyframes showingLine {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
     opacity: 1;
-    transition-delay: 0.2s;
-    animation: 0.5s initLine;
-    animation-delay: 1s;
-    transform-origin: top;
-    animation-fill-mode: forwards;
   }
-  @media only screen and (max-width: 1024px) {
-    .active-container .section01 .dot {
-      top: 34%;
-    }
-    .active-container .section01 .line {
-      top: 34%;
-    }
-  }
-  @media only screen and (max-width: 640px) {
-    .active-container .section01 .dot {
-      top: 30%;
-    }
-    .active-container .section01 .line {
-      top: 30%;
-    }
-  }
-  .fp-viewing-firstPage .section01 .dot {
-    top: 0;
-  }
-  .fp-viewing-firstPage.active-container .section00 .scroll_text {
-    opacity: 0;
-  }
-  .fp-viewing-firstPage.active-container .section00 .dot {
-    top: 100%;
-    opacity: 0;
-  }
-  @keyframes initLine {
-    0% {
-      height: 173px;
-    }
+}
 
-    100% {
-      height: 0;
-    }
-  }
-  @keyframes showingLine {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
+@keyframes showUp {
+  0% {
+    opacity: 0.4;
   }
 
-  @keyframes showUp {
-    0% {
-      opacity: 0.4;
-    }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
 
-    100% {
-      margin-top: 0;
-      opacity: 1;
-    }
+@keyframes showDown {
+  0% {
+    opacity: 0.4;
   }
 
-  @keyframes showDown {
-    0% {
-      opacity: 0.4;
-    }
-
-    100% {
-      margin-top: 0;
-      opacity: 1;
-    }
+  100% {
+    margin-top: 0;
+    opacity: 1;
   }
 }
