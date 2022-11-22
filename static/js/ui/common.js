@@ -192,6 +192,7 @@ ui.page.common.prototype = {
       ".gnb li a",
       $.proxy(this._closeMobileGnbMenu, this)
     );
+    this.welDoc.on("click", ".gnb li a", $.proxy(this._initTeamScroll, this));
     this.welDoc.on(
       "click",
       "._closeMobileGnbMenu",
@@ -217,6 +218,12 @@ ui.page.common.prototype = {
       'a[href="#"]',
       $.proxy(this._onClickEventPrevent, this)
     );
+  },
+  _initTeamScroll: function () {
+    const ins = $.fn.fp_scrolloverflow.iscrollHandler.iScrollInstances.filter(
+      (item) => item.wrapper.innerText.includes("Team")
+    );
+    ins[0].scrollTo(0, 0);
   },
   _toggleTranslatebox: function (e) {
     const target = $(e.currentTarget);
