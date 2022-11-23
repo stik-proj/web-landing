@@ -1,7 +1,7 @@
 const teamListLeader = [
   {
     imgUrl: "/static/img/member/leader/gilbert.png",
-    name: "Gilbert",
+    name: "Gilbert Gil",
     position: "CTO",
   },
   {
@@ -189,6 +189,16 @@ ui.page.common.prototype = {
     );
     this.welDoc.on(
       "click",
+      "._btnStaikaAppDownload",
+      $.proxy(this._moveStaikaDownloadAppPage, this)
+    );
+    this.welDoc.on(
+      "click",
+      "._btnGazagoAppDownload",
+      $.proxy(this._moveGazagoDownloadAppPage, this)
+    );
+    this.welDoc.on(
+      "click",
       ".gnb li a",
       $.proxy(this._closeMobileGnbMenu, this)
     );
@@ -219,11 +229,38 @@ ui.page.common.prototype = {
       $.proxy(this._onClickEventPrevent, this)
     );
   },
-  _initTeamScroll: function () {
-    const ins = $.fn.fp_scrolloverflow.iscrollHandler.iScrollInstances.filter(
-      (item) => item.wrapper.innerText.includes("Team")
-    );
-    ins[0].scrollTo(0, 0);
+  _moveStaikaDownloadAppPage: function () {
+    if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+      window.open("https://apps.apple.com/us/app/staika/id1629354285");
+    } else {
+      window.open(
+        "https://play.google.com/store/apps/details?id=kr.co.eztechfin.staika_app"
+      );
+    }
+  },
+  _moveGazagoDownloadAppPage: function () {
+    if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+      window.open("https://testflight.apple.com/join/yNZhHo9Z");
+    } else {
+      window.open(
+        "https://play.google.com/store/apps/details?id=kr.co.eztechfin.gazaGo"
+      );
+    }
+  },
+  _initTeamScroll: function (e) {
+    const insTeam =
+      $.fn.fp_scrolloverflow.iscrollHandler.iScrollInstances.filter((item) =>
+        item.wrapper.innerText.includes("Team")
+      );
+    const insRoadmap =
+      $.fn.fp_scrolloverflow.iscrollHandler.iScrollInstances.filter((item) =>
+        item.wrapper.innerText.includes("Roadmap")
+      );
+
+    if (e.currentTarget.innerText === "Roadmap") {
+      insRoadmap[0].scrollTo(0, 0);
+    }
+    insTeam[0].scrollTo(0, 0);
   },
   _toggleTranslatebox: function (e) {
     const target = $(e.currentTarget);
@@ -282,11 +319,11 @@ ui.page.common.prototype = {
       // autoScrolling: false,
       slidesNavigation: true,
       slidesToSections: false,
-      // bigSectionsDestination: top,
+      bigSectionsDestination: "top",
       // normalScrollEvent: "#section6",
       scrollingSpeed: 1000,
       scrollOverflow: true,
-      scrollOverflowReset: true,
+      scrollOverflowReset: false,
       css3: true,
       // normalScrollElements: ".section06",
       onScrollOverflow: function (section, slide, position, direction) {

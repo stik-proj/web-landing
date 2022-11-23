@@ -794,7 +794,7 @@
 /* section05 */
 
 .section05 .flex {
-  padding-bottom: 200px;
+  /* padding-bottom: 200px; */
 }
 @media only screen and (max-width: 1024px) {
   .section05 .flex {
@@ -1048,7 +1048,7 @@
 }
 @media only screen and (max-width: 740px) {
   .section06 .teamNav {
-    width: 310px;
+    width: 330px;
     margin: 0 auto;
   }
   .section06 .teamNav > ul {
