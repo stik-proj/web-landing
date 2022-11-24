@@ -253,6 +253,9 @@ select {
 .mt100 {
   margin-top: 100px !important;
 }
+.pt60 {
+  padding-top: 60px !important;
+}
 
 @media only screen and (max-width: 1023px) {
   .m-block {

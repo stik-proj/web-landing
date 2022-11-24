@@ -132,7 +132,8 @@
 }
 
 .section05 .inner-contents {
-  padding-top: 5%;
+  /* padding-top: 50px; */
+  padding-bottom: 100px;
 }
 @media only screen and (max-width: 1024px) {
   .inner-contents {
@@ -801,14 +802,20 @@
     padding-bottom: 100px;
   }
 }
-.section05 .fp-tableCell {
+.section05 {
+  /* padding-top: 100px; */
+}
+.section05 .inner-contents {
   padding: 100px 0;
+}
+.section05 .inner-contents .flex {
+  margin-top: 20px;
 }
 .section05 .grid {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 3.714rem auto;
+  /* margin: 3.714rem auto; */
   text-align: center;
   justify-content: center;
 }
@@ -919,6 +926,7 @@
 }
 @media only screen and (max-width: 1024px) {
   .section05 .grid .grid-item {
+    position: relative;
     width: 314px;
     height: 242px;
     margin: 0.7rem;
@@ -929,7 +937,10 @@
     margin: 0.7rem;
   }
   .section05 .grid .grid-item .card_img1 {
-    width: 216px;
+    width: auto;
+    padding-left: 0;
+    padding-top: 20px;
+    height: 100%;
   }
   .section05 .grid .grid-item > div {
     padding: 2.3rem 1.4rem;
@@ -1515,7 +1526,7 @@
     padding: 8rem 2rem;
   }
   .section05 .inner-contents {
-    padding: 4rem 2rem;
+    padding: 8rem 2rem;
   }
   .section05 .grid {
     width: 100% !important;
