@@ -304,6 +304,7 @@ ui.page.common.prototype = {
         "#fff",
         "#fff",
         "#fff",
+        "#fff",
       ],
       anchors: [
         "firstPage",
@@ -313,6 +314,7 @@ ui.page.common.prototype = {
         "5thPage",
         "6thPage",
         "7thPage",
+        "8thPage",
         "lastPage",
       ],
       menu: "#menu",
