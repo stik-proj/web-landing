@@ -351,9 +351,16 @@
   background-color: #fff !important;
   transition: all 1s;
 }
+.section01 .fp-tableCell {
+  display: flex;
+  align-items: center;
+}
 .active-container .section01 .inner-contents {
-  transform: translateY(0);
+  transform: translate(-50%, 0);
   opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .active-container .section01 .section-title {
   color: #000;
@@ -382,11 +389,14 @@
   height: 100%;
 }
 .section01 .inner-contents {
-  position: relative;
+  position: absolute;
   top: 30%;
-  transform: translateY(200px);
+  left: 50%;
+  transform: translate(-50%, 200px);
   opacity: 0;
   transition: 0.5s all ease-in-out;
+  text-align: center;
+  width: 100%;
 }
 @media only screen and (max-width: 1024px) {
   .section01 > div {
