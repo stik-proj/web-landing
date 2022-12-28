@@ -47,23 +47,13 @@ const teamListStrategic = [
     position: "Development",
   },
   {
-    imgUrl: "/static/img/member/strategic/suyoung.png",
-    name: "Suyoung Kim",
-    position: "Development",
-  },
-  {
-    imgUrl: "/static/img/member/strategic/hanwool.png",
-    name: "Hanwool Lee",
+    imgUrl: "/static/img/member/strategic/onyu.png",
+    name: "onyu Jeong",
     position: "Development",
   },
   {
     imgUrl: "/static/img/member/strategic/sunghwi.png",
     name: "Sunghwi Hong",
-    position: "Development",
-  },
-  {
-    imgUrl: "/static/img/member/strategic/onyu.png",
-    name: "onyu Jeong",
     position: "Development",
   },
 ];
@@ -119,6 +109,16 @@ const teamListBlockChain = [
     position: "Planning",
   },
   {
+    imgUrl: "/static/img/member/blockchain/seungjae.png",
+    name: "Seungjae Oh",
+    position: "Planning",
+  },
+  {
+    imgUrl: "/static/img/member/blockchain/junyoung.png",
+    name: "Jun Young park",
+    position: "Planning",
+  },
+  {
     imgUrl: "/static/img/member/blockchain/sia.png",
     name: "Sia Park",
     position: "Design",
@@ -128,8 +128,18 @@ const teamListBlockChain = [
     name: "Kaya Cheon",
     position: "Design",
   },
+  {
+    imgUrl: "/static/img/member/blockchain/taehyun.png",
+    name: "Tae Hyeon Kim",
+    position: "intern",
+  },
 ];
 const teamListMarketingPeople = [
+  {
+    imgUrl: "/static/img/member/marketingPeople/byungryeol.png",
+    name: "Byungryeol Min",
+    position: "People",
+  },
   {
     imgUrl: "/static/img/member/marketingPeople/hyeonseok.png",
     name: "Hyeonseok Cho",
@@ -141,9 +151,9 @@ const teamListMarketingPeople = [
     position: "Marketing",
   },
   {
-    imgUrl: "/static/img/member/marketingPeople/byungryeol.png",
-    name: "Byungryeol Min",
-    position: "People",
+    imgUrl: "/static/img/member/marketingPeople/jeongyeon.png",
+    name: "Jeongyeon Moon",
+    position: "Marketing",
   },
 ];
 
