@@ -19,6 +19,25 @@ const teamListLeader = [
     name: "Kevin Son",
     position: "CSO",
   },
+  {
+    imgUrl: "/static/img/member/leader/taeho.png",
+    name: "Taeho Lim",
+    position: "CMO | Youtube Influencer",
+    youtubeTag: ["@dantestock"],
+    youtubeUrl: ["https://www.youtube.com/channel/UC6ij59Gy_HnqO4pFu9A_zgQ"],
+    sub: "400K subscribers",
+  },
+  {
+    imgUrl: "/static/img/member/leader/yongjae.png",
+    name: "Yongjae Kim",
+    position: "CMO | Youtube Influencer",
+    youtubeTag: ["@yongjeabro", "@ap5798"],
+    youtubeUrl: [
+      "https://www.youtube.com/@yongjaebro",
+      "https://www.youtube.com/@ap5798",
+    ],
+    sub: "490K subscribers",
+  },
 ];
 const teamListStrategic = [
   {
@@ -156,9 +175,26 @@ const teamListMarketingPeople = [
     position: "Marketing",
   },
 ];
-
 $.fn.memberInfoInput = function (memberlist) {
-  memberlist.forEach((member) => {
+  memberlist.forEach((member, index) => {
+    let youUrl = [];
+    let memberUrl;
+    if (member.youtubeUrl) {
+      youUrl = member.youtubeUrl;
+      // youUrl.forEach((url) => {
+      //   memberUrl = url;
+      //   console.log(memberUrl);
+      // });
+    }
+    let youTag = [];
+    let memberTag;
+    if (member.youtubeTag) {
+      youTag = member.youtubeTag;
+      youTag.forEach((tag) => {
+        memberTag = tag;
+        console.log(memberTag);
+      });
+    }
     $(this).append(`
     <li class="team_member" >
       <img class="team_img" src="${member.imgUrl}" alt="">
@@ -166,6 +202,8 @@ $.fn.memberInfoInput = function (memberlist) {
       <p class="team_position">${member.position}</p>
     </li>`);
   });
+  if (memberlist.desc) {
+  }
 };
 var ui = ui || {};
 ui.page = ui.page || {};
@@ -266,11 +304,18 @@ ui.page.common.prototype = {
       $.fn.fp_scrolloverflow.iscrollHandler.iScrollInstances.filter((item) =>
         item.wrapper.innerText.includes("Roadmap")
       );
+    const insExperience =
+      $.fn.fp_scrolloverflow.iscrollHandler.iScrollInstances.filter((item) =>
+        item.wrapper.innerText.includes("Experience")
+      );
 
     if (e.currentTarget.innerText === "Roadmap") {
       insRoadmap[0].scrollTo(0, 0);
     }
     insTeam[0].scrollTo(0, 0);
+    if (e.currentTarget.innerText === "Experience") {
+      insExperience[0].scrollTo(0, 0);
+    }
   },
   _toggleTranslatebox: function (e) {
     const target = $(e.currentTarget);
@@ -306,7 +351,7 @@ ui.page.common.prototype = {
     $("#fullpage").fullpage({
       sectionsColor: [
         "",
-        "#000",
+        "#fff",
         "#fff",
         "#fff",
         "#fff",
@@ -372,9 +417,26 @@ ui.page.common.prototype = {
     $(".section03 .grid").masonry({
       itemSelector: ".grid-item",
     });
-
+    $(".slider").slick({
+      autoplay: true,
+      infinite: true,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      autoplaySpeed: 500,
+      speed: 2000,
+      arrows: false,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+      ],
+    });
     $(document).ready(function () {});
-    $(".teamListLeader").memberInfoInput(teamListLeader);
+    // $(".teamListLeader").memberInfoInput(teamListLeader);
     $(".teamListStrategic").memberInfoInput(teamListStrategic);
     $(".teamListBlockChain").memberInfoInput(teamListBlockChain);
     $(".teamListMarketingPeople").memberInfoInput(teamListMarketingPeople);
