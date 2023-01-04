@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
-@font-face {
+@import url("https://use.typekit.net/nzi6gdk.css");
+/* @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -142,4 +143,4 @@
   src: local("Montserrat"),
     url("https://fonts.cdnfonts.com/s/14883/Montserrat-BlackItalic.woff")
       format("woff");
-}
+} */
