@@ -122,11 +122,11 @@ const teamListBlockChain = [
     name: "Robert Baik",
     position: "Tech LAB",
   },
-  {
-    imgUrl: "/static/img/member/blockchain/urika.png",
-    name: "Urika Jeon",
-    position: "Planning",
-  },
+  // {
+  //   imgUrl: "/static/img/member/blockchain/urika.png",
+  //   name: "Urika Jeon",
+  //   position: "Planning",
+  // },
   {
     imgUrl: "/static/img/member/blockchain/seungjae.png",
     name: "Seungjae Oh",
@@ -423,17 +423,17 @@ ui.page.common.prototype = {
       slidesToShow: 6,
       slidesToScroll: 1,
       autoplaySpeed: 500,
-      speed: 2000,
+      speed: 1000,
       arrows: false,
       dots: false,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-          },
-        },
-      ],
+      // responsive: [
+      //   {
+      //     breakpoint: 1024,
+      //     settings: {
+      //       slidesToShow: 3,
+      //     },
+      //   },
+      // ],
     });
     $(document).ready(function () {});
     // $(".teamListLeader").memberInfoInput(teamListLeader);

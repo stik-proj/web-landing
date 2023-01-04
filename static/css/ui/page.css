@@ -320,7 +320,7 @@
   line-height: 4.285rem;
   font-weight: 200;
   word-break: keep-all;
-  font-family: "Montserrat";
+  font-family: "Montserrat" !important;
 }
 .section00 .btn {
   margin-top: 2.857rem;
@@ -444,7 +444,8 @@
   padding-top: 120px;
 }
 .section02 .fp-tableCell {
-  display: flex;
+  /* display: flex; */
+  height: 100%;
   align-items: flex-start;
   justify-content: baseline;
 }
@@ -463,6 +464,9 @@
   position: absolute;
   right: 0%;
   top: 5%;
+}
+.section02 .fp-scroller {
+  height: 100%;
 }
 @media only screen and (max-width: 1024px) {
   .section02 .bg02 {
@@ -821,7 +825,7 @@
 .section05 .inner-contents {
   max-width: 100%;
 }
-.section05 .inner-contents .section-menu {
+.section05 .section-menu {
   font-size: 3.571rem;
   font-weight: 500;
   line-height: 3.571rem;
@@ -833,7 +837,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  padding-top: 5rem;
   z-index: 0;
 }
 
@@ -894,6 +898,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.section05 .inner_experience01 .container .image {
   margin-left: 12.714rem;
 }
 .section05 .bg_bt {
@@ -1015,7 +1021,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 8.7rem;
+    padding-top: 8.7rem;
   }
   .section05 .container .item {
     text-align: center;
@@ -1059,6 +1065,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 0;
+  }
+  .section05 .inner_experience01 .container .image {
     margin-left: 0;
   }
   .section05 .gazago_list li {
@@ -1114,14 +1123,14 @@
 }
 
 .section05 .inner_experience02 .container {
-  margin-top: 19.142rem;
+  padding-top: 19.142rem;
 }
 .section05 .inner_experience02 .item {
   margin-right: 30rem;
 }
 
 .section05 .inner_experience02 .wrap_slider {
-  margin-top: 30rem;
+  margin-top: 10rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1131,7 +1140,7 @@
     align-items: center;
   }
   .section05 .inner_experience02 .container {
-    margin-top: 7rem;
+    padding-top: 7rem;
   }
 
   .section05 .inner_experience02 {
@@ -1237,7 +1246,7 @@
     width: 59px;
   }
   .section05 .inner_experience03 .container {
-    margin-top: 5.3rem;
+    padding-top: 5.3rem;
     padding-bottom: 5rem;
   }
   .section05 .inner_experience03 .container .image {
@@ -1725,6 +1734,7 @@
   .section04 .section-inner {
     padding-top: 8rem;
   }
+
   /* .roadmap {
     position: relative;
     margin-top: 4.857rem;
