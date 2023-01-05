@@ -285,13 +285,13 @@
 }
 .section00 {
   background: radial-gradient(
-      88.79% 88.79% at 50% 50%,
+      137.19% 137.15% at 50% 100%,
       rgba(0, 0, 0, 0) 5.03%,
       rgba(255, 153, 0, 0) 42.73%,
-      rgba(143, 227, 222, 0.2) 100%
+      rgba(143, 227, 222, 0.3) 100%
     )
     #000000;
-  background-blend-mode: lighten, normal;
+  background-blend-mode: lighten;
 }
 .section00 .inner-contents {
   position: relative;
@@ -321,6 +321,12 @@
   font-weight: 200;
   word-break: keep-all;
   font-family: "Montserrat" !important;
+}
+@media only screen and (max-width: 1024px) {
+  .section00 .tit {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
 }
 .section00 .btn {
   margin-top: 2.857rem;
@@ -444,7 +450,7 @@
   padding-top: 120px;
 }
 .section02 .fp-tableCell {
-  /* display: flex; */
+  display: flex;
   height: 100%;
   align-items: flex-start;
   justify-content: baseline;
@@ -818,7 +824,7 @@
 }
 /* section05 */
 .section05 .inner_experience01 {
-  background: linear-gradient(180deg, #000000 0%, #242424 77.65%, #242424 100%);
+  background: linear-gradient(180deg, #000000 0%, #242424 25.65%, #242424 100%);
   padding-bottom: 10rem;
   margin: 0 auto;
 }
@@ -904,11 +910,11 @@
 }
 .section05 .bg_bt {
   position: absolute;
-  width: 100vw;
-  bottom: -100;
-  height: 268px;
+  width: 100%;
+  bottom: -400;
+  z-index: -999;
   left: 0;
-  z-index: -1;
+  height: 50%;
 }
 .section05 .container .item .ex_tit {
   margin-top: 5.857rem;
@@ -943,7 +949,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
+  margin-top: 15rem;
   padding-bottom: 10rem;
 }
 .section05 .gazago_list li {
@@ -977,6 +983,9 @@
   text-align: left;
   color: rgba(163, 163, 163, 1);
 }
+.section05 .inner_experience02 .gazago_list .gazago_desc .desc {
+  color: rgba(183, 216, 255, 1);
+}
 @media only screen and (max-width: 1024px) {
   .section05 .container .bg_shape {
     position: absolute;
@@ -987,24 +996,22 @@
   }
   .section05 .bg_bt {
     position: absolute;
-    width: 100vw;
-    bottom: -50;
+    bottom: 0;
     height: auto;
     left: 0;
-    z-index: -1;
   }
   .section05 .container .bg_shape.lb {
     bottom: 150;
   }
   .section05 .container .bg_shape.lt {
-    top: 400;
+    top: 500;
   }
   .section05 .container .bg_shape.rt {
     right: 0;
-    top: 350;
+    top: 430;
   }
   .section05 .container .bg_shape.rm {
-    top: 500;
+    top: 600;
   }
   .section05 .container .bg_shape.rb {
     bottom: 150;
@@ -1046,6 +1053,12 @@
     margin-top: 2rem;
     justify-content: center;
   }
+  .section05 .container .item .img_feng {
+    margin-top: 7rem;
+  }
+  .section05 .wrap_slider ul {
+    margin-top: 10rem;
+  }
   .section05 .container .item .store .store_btn {
     margin-top: 0;
     font-size: 1.142rem;
@@ -1067,8 +1080,14 @@
     justify-content: center;
     margin-left: 0;
   }
+  .section05 .container .image .shadow {
+    margin-top: 1rem;
+  }
   .section05 .inner_experience01 .container .image {
     margin-left: 0;
+  }
+  .section05 .gazago_list {
+    margin-top: 0;
   }
   .section05 .gazago_list li {
     justify-content: center;
@@ -1150,6 +1169,9 @@
   .section05 .inner_experience02 .wrap_slider ul {
     margin-top: 50rem;
     display: flex;
+  }
+  .section05 .inner_experience02 .gazago_list .gazago_desc .desc {
+    color: rgba(183, 216, 255, 1);
   }
 }
 /* /////////////////////////// */
@@ -1269,7 +1291,7 @@
     min-width: 291px;
     width: 291px;
     border-radius: 20px;
-    margin-bottom: 30rem;
+    margin-bottom: 15rem;
     position: relative;
   }
   .section05 .inner_experience03 .whitePaper .white_container {
@@ -1289,6 +1311,9 @@
     position: absolute;
     right: 15;
     bottom: -10;
+  }
+  .section05 .inner_experience03 .white {
+    margin-top: 0;
   }
 }
 .section06 .flex {
@@ -1503,9 +1528,17 @@
   border-radius: 20px;
 }
 @media only screen and (max-width: 1024px) {
+  .section07 .inner-contents {
+    margin: 20rem 0;
+  }
   .section07 .partner_logo > ul {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+  }
+  .section07 .partner_logo > ul li {
+    width: 40%;
+    margin-left: 0;
+    justify-content: space-around;
   }
 }
 @media only screen and (max-width: 520px) {
@@ -1843,11 +1876,12 @@
     width: 40px;
   }
   .shape01 {
-    width: 1500px;
+    width: 1000px;
     transform: translate(-50%, -40%);
   }
   .shape02 {
     bottom: 30%;
+    width: 1000px;
   }
   .section00 .coin01 {
     top: 15%;

@@ -426,14 +426,14 @@ ui.page.common.prototype = {
       speed: 1000,
       arrows: false,
       dots: false,
-      // responsive: [
-      //   {
-      //     breakpoint: 1024,
-      //     settings: {
-      //       slidesToShow: 3,
-      //     },
-      //   },
-      // ],
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+      ],
     });
     $(document).ready(function () {});
     // $(".teamListLeader").memberInfoInput(teamListLeader);
