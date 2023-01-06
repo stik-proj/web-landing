@@ -313,6 +313,7 @@
   font-size: 1.142rem;
   letter-spacing: 0.5px;
   line-height: 1.857rem;
+  word-break: keep-all;
 }
 .section00 .tit {
   font-size: 3.571rem;
@@ -878,7 +879,6 @@
   justify-content: center;
 }
 .section05 .container .item .store .store_btn {
-  margin-top: 5.714rem;
   font-size: 1.142rem;
   font-weight: 400;
   line-height: 1.428rem;
@@ -1050,7 +1050,7 @@
     margin-top: 2.5rem;
   }
   .section05 .container .item .store {
-    margin-top: 2rem;
+    margin-top: 3rem;
     justify-content: center;
   }
   .section05 .container .item .img_feng {
@@ -1167,7 +1167,7 @@
     padding-bottom: 10rem;
   }
   .section05 .inner_experience02 .wrap_slider ul {
-    margin-top: 50rem;
+    margin-top: 15rem;
     display: flex;
   }
   .section05 .inner_experience02 .gazago_list .gazago_desc .desc {
@@ -1877,7 +1877,7 @@
   }
   .shape01 {
     width: 1000px;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -45%);
   }
   .shape02 {
     bottom: 30%;
