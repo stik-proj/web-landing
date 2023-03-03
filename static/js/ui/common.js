@@ -46,6 +46,11 @@ const teamListStrategic = [
     position: "Planning",
   },
   {
+    imgUrl: "/static/img/member/strategic/eunmin.png",
+    name: "Thomas Gil",
+    position: "Planning",
+  },
+  {
     imgUrl: "/static/img/member/strategic/kitae.png",
     name: "Kitae Kwon",
     position: "Planning",
@@ -73,6 +78,11 @@ const teamListStrategic = [
   {
     imgUrl: "/static/img/member/strategic/sunghwi.png",
     name: "Sunghwi Hong",
+    position: "Development",
+  },
+  {
+    imgUrl: "/static/img/member/strategic/gijae.png",
+    name: "Liam Lee",
     position: "Development",
   },
 ];
