@@ -897,7 +897,23 @@
   display: flex;
   flex-wrap: wrap;
 }
+.section05 .container .item .homepage .homepage_btn {
+  font-size: 1.428rem;
+  font-weight: 500;
+  line-height: 1.428rem;
+  letter-spacing: 0em;
+  color: black;
+}
 
+.section05 .container .item .homepage {
+  border-radius: 8px;
+  padding: 17px 38px;
+  background-color: #0ee6f3;
+  margin-top: 5.714rem;
+  display: inline-block;
+  width: 220px;
+  text-align: center;
+}
 .section05 .container .image {
   margin-top: 10rem;
   display: flex;
@@ -1033,7 +1049,7 @@
   .section05 .container .item {
     text-align: center;
     justify-content: center;
-    align-content: center;
+    align-items: center;
   }
   .section05 .container .item .logo {
     width: 135px;
@@ -1070,6 +1086,14 @@
     border: 1px solid #dadada;
     border-radius: 8px;
     margin: 0 0.5rem;
+  }
+  .section05 .container .item .homepage .homepage_btn {
+    font-size: 1.6rem;
+  }
+
+  .section05 .container .item .homepage {
+    width: 166px;
+    padding: 1.25rem 2.5rem;
   }
   .section05 .container .image {
     margin-top: 4.5rem;
