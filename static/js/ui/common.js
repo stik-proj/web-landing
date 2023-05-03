@@ -71,6 +71,11 @@ const teamListStrategic = [
     position: "Development",
   },
   {
+    imgUrl: "/static/img/member/strategic/bokyun.png",
+    name: "Bokyun kim",
+    position: "Development",
+  },
+  {
     imgUrl: "/static/img/member/strategic/onyu.png",
     name: "onyu Jeong",
     position: "Development",
@@ -132,11 +137,11 @@ const teamListBlockChain = [
     name: "Robert Baik",
     position: "Tech LAB",
   },
-  // {
-  //   imgUrl: "/static/img/member/blockchain/urika.png",
-  //   name: "Urika Jeon",
-  //   position: "Planning",
-  // },
+  {
+    imgUrl: "/static/img/member/blockchain/eugene.png",
+    name: "Eugene Choi",
+    position: "Planning",
+  },
   {
     imgUrl: "/static/img/member/blockchain/seungjae.png",
     name: "Seungjae Oh",
@@ -144,12 +149,22 @@ const teamListBlockChain = [
   },
   {
     imgUrl: "/static/img/member/blockchain/junyoung.png",
-    name: "Jun Young park",
+    name: "Junyoung park",
     position: "Planning",
+  },
+  {
+    imgUrl: "/static/img/member/blockchain/dawson.png",
+    name: "Dawson Lee",
+    position: "Design",
   },
   {
     imgUrl: "/static/img/member/blockchain/sia.png",
     name: "Sia Park",
+    position: "Design",
+  },
+  {
+    imgUrl: "/static/img/member/blockchain/jiyun.png",
+    name: "Jiyun Lim",
     position: "Design",
   },
   {
@@ -159,7 +174,7 @@ const teamListBlockChain = [
   },
   {
     imgUrl: "/static/img/member/blockchain/taehyun.png",
-    name: "Tae Hyeon Kim",
+    name: "Taehyeon Kim",
     position: "intern",
   },
 ];
