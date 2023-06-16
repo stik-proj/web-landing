@@ -1534,7 +1534,7 @@
 }
 .section07 .partner_logo > ul {
   margin-top: 4.285rem;
-  justify-content: center;
+  justify-content: left;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1681,7 +1681,7 @@
 }
 .footer .inner-contents ul li {
   position: relative;
-
+  letter-spacing: 0px;
   font-weight: 300;
   font-size: 1.142rem;
   line-height: 1.714rem;
