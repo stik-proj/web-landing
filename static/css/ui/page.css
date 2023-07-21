@@ -1534,8 +1534,8 @@
 }
 .section07 .partner_logo > ul {
   margin-top: 4.285rem;
-  justify-content: left;
   display: flex;
+  justify-content: left;
   flex-wrap: wrap;
   align-items: center;
 }

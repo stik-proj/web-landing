@@ -138,16 +138,6 @@ const teamListBlockChain = [
     position: "Tech LAB",
   },
   {
-    imgUrl: "/static/img/member/blockchain/eugene.png",
-    name: "Eugene Choi",
-    position: "Planning",
-  },
-  {
-    imgUrl: "/static/img/member/blockchain/seungjae.png",
-    name: "Seungjae Oh",
-    position: "Planning",
-  },
-  {
     imgUrl: "/static/img/member/blockchain/junyoung.png",
     name: "Junyoung park",
     position: "Planning",
@@ -171,11 +161,6 @@ const teamListBlockChain = [
     imgUrl: "/static/img/member/blockchain/kaya.png",
     name: "Kaya Cheon",
     position: "Design",
-  },
-  {
-    imgUrl: "/static/img/member/blockchain/taehyun.png",
-    name: "Taehyeon Kim",
-    position: "intern",
   },
 ];
 const teamListMarketingPeople = [
