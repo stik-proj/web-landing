@@ -360,7 +360,9 @@ ui.page.common.prototype = {
         },
       ],
     });
-    $(document).ready(function () {});
+    $(document).ready(function () {
+      // $.fn.fullpage.moveTo(2);
+    });
     // $(".teamListLeader").memberInfoInput(teamListLeader);
     $(".teamListStrategic").memberInfoInput(teamListStrategic);
     $(".teamListBlockChain").memberInfoInput(teamListBlockChain);
