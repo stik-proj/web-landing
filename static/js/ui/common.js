@@ -32,10 +32,7 @@ const teamListLeader = [
     name: "Yongjae Kim",
     position: "CMO | Youtube Influencer",
     youtubeTag: ["@yongjeabro", "@ap5798"],
-    youtubeUrl: [
-      "https://www.youtube.com/@yongjaebro",
-      "https://www.youtube.com/@ap5798",
-    ],
+    youtubeUrl: ["https://www.youtube.com/@yongjaebro", "https://www.youtube.com/@ap5798"],
     sub: "490K subscribers",
   },
 ];
@@ -230,47 +227,15 @@ ui.page.common.prototype = {
   _assignElements: function () {
     this.welDoc = $(document.body);
     this.welWin = $(window);
-    this.welDoc.on(
-      "click",
-      'a[href="#"]',
-      $.proxy(this._onClickEventPrevent, this)
-    );
-    this.welDoc.on(
-      "click",
-      "._toggleTranslateMenu",
-      $.proxy(this._toggleTranslatebox, this)
-    );
-    this.welDoc.on(
-      "click",
-      "._openMobileGnbMenu",
-      $.proxy(this._openMobileGnbMenu, this)
-    );
-    this.welDoc.on(
-      "click",
-      "._btnStaikaAppDownload",
-      $.proxy(this._moveStaikaDownloadAppPage, this)
-    );
-    this.welDoc.on(
-      "click",
-      "._btnGazagoAppDownload",
-      $.proxy(this._moveGazagoDownloadAppPage, this)
-    );
-    this.welDoc.on(
-      "click",
-      ".gnb li a",
-      $.proxy(this._closeMobileGnbMenu, this)
-    );
+    this.welDoc.on("click", 'a[href="#"]', $.proxy(this._onClickEventPrevent, this));
+    this.welDoc.on("click", "._toggleTranslateMenu", $.proxy(this._toggleTranslatebox, this));
+    this.welDoc.on("click", "._openMobileGnbMenu", $.proxy(this._openMobileGnbMenu, this));
+    this.welDoc.on("click", "._btnStaikaAppDownload", $.proxy(this._moveStaikaDownloadAppPage, this));
+    this.welDoc.on("click", "._btnGazagoAppDownload", $.proxy(this._moveGazagoDownloadAppPage, this));
+    this.welDoc.on("click", ".gnb li a", $.proxy(this._closeMobileGnbMenu, this));
     this.welDoc.on("click", ".gnb li a", $.proxy(this._initTeamScroll, this));
-    this.welDoc.on(
-      "click",
-      "._closeMobileGnbMenu",
-      $.proxy(this._closeMobileGnbMenu, this)
-    );
-    this.welDoc.on(
-      "click",
-      ".teamNav ul li",
-      $.proxy(this._onClickScrollMove, this)
-    );
+    this.welDoc.on("click", "._closeMobileGnbMenu", $.proxy(this._closeMobileGnbMenu, this));
+    this.welDoc.on("click", ".teamNav ul li", $.proxy(this._onClickScrollMove, this));
   },
   _onScrollEvent: function () {
     // $(".section06").on("mousewheel", function (e, a) {
@@ -281,43 +246,26 @@ ui.page.common.prototype = {
     event.preventDefault();
   },
   _attachEventHandlers: function () {
-    this.welDoc.on(
-      "click",
-      'a[href="#"]',
-      $.proxy(this._onClickEventPrevent, this)
-    );
+    this.welDoc.on("click", 'a[href="#"]', $.proxy(this._onClickEventPrevent, this));
   },
   _moveStaikaDownloadAppPage: function () {
     if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
       window.open("https://apps.apple.com/us/app/staika/id1629354285");
     } else {
-      window.open(
-        "https://play.google.com/store/apps/details?id=kr.co.eztechfin.staika_app"
-      );
+      window.open("https://play.google.com/store/apps/details?id=kr.co.eztechfin.staika_app");
     }
   },
   _moveGazagoDownloadAppPage: function () {
     if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
       window.open("https://testflight.apple.com/join/yNZhHo9Z");
     } else {
-      window.open(
-        "https://play.google.com/store/apps/details?id=kr.co.eztechfin.gazaGo"
-      );
+      window.open("https://play.google.com/store/apps/details?id=kr.co.eztechfin.gazaGo");
     }
   },
   _initTeamScroll: function (e) {
-    const insTeam =
-      $.fn.fp_scrolloverflow.iscrollHandler.iScrollInstances.filter((item) =>
-        item.wrapper.innerText.includes("Team")
-      );
-    const insRoadmap =
-      $.fn.fp_scrolloverflow.iscrollHandler.iScrollInstances.filter((item) =>
-        item.wrapper.innerText.includes("Roadmap")
-      );
-    const insExperience =
-      $.fn.fp_scrolloverflow.iscrollHandler.iScrollInstances.filter((item) =>
-        item.wrapper.innerText.includes("Experience")
-      );
+    const insTeam = $.fn.fp_scrolloverflow.iscrollHandler.iScrollInstances.filter((item) => item.wrapper.innerText.includes("Team"));
+    const insRoadmap = $.fn.fp_scrolloverflow.iscrollHandler.iScrollInstances.filter((item) => item.wrapper.innerText.includes("Roadmap"));
+    const insExperience = $.fn.fp_scrolloverflow.iscrollHandler.iScrollInstances.filter((item) => item.wrapper.innerText.includes("Experience"));
 
     if (e.currentTarget.innerText === "Roadmap") {
       insRoadmap[0].scrollTo(0, 0);
@@ -341,9 +289,7 @@ ui.page.common.prototype = {
     const target = $(e.currentTarget).data("target");
     const elTeam = $("#" + target);
 
-    const ins = $.fn.fp_scrolloverflow.iscrollHandler.iScrollInstances.filter(
-      (item) => item.wrapper.innerText.includes("Team")
-    );
+    const ins = $.fn.fp_scrolloverflow.iscrollHandler.iScrollInstances.filter((item) => item.wrapper.innerText.includes("Team"));
 
     // $(".teamNav li").addClass("current").siblings().removeClass("current");
 
@@ -359,29 +305,8 @@ ui.page.common.prototype = {
   },
   initFullpage: function () {
     $("#fullpage").fullpage({
-      sectionsColor: [
-        "",
-        "#fff",
-        "#fff",
-        "#fff",
-        "#fff",
-        "#fff",
-        "#fff",
-        "#fff",
-        "#fff",
-        "#fff",
-      ],
-      anchors: [
-        "firstPage",
-        "secondPage",
-        "3rdPage",
-        "4thpage",
-        "5thPage",
-        "6thPage",
-        "7thPage",
-        "8thPage",
-        "lastPage",
-      ],
+      sectionsColor: ["", "#fff", "#fff", "#fff", "#fff", "#fff", "#fff", "#fff", "#fff", "#fff"],
+      anchors: ["firstPage", "secondPage", "StaikaApp", "3rdPage", "4thpage", "5thPage", "6thPage", "7thPage", "8thPage", "lastPage"],
       menu: "#menu",
       // autoScrolling: false,
       slidesNavigation: true,
@@ -397,17 +322,7 @@ ui.page.common.prototype = {
         console.log(section, slide, position, direction);
       },
       afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
-        console.log(
-          "afterSlideLoad--" +
-            "anchorLink: " +
-            anchorLink +
-            " index: " +
-            index +
-            " slideAnchor: " +
-            slideAnchor +
-            " slideIndex: " +
-            slideIndex
-        );
+        console.log("afterSlideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
         console.log("----------------");
       },
       afterLoad: function (anchorLink, index) {
