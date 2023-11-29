@@ -304,10 +304,9 @@ ui.page.common.prototype = {
     }
   },
   initFullpage: function () {
-    let needToMoveToStaika = window.location.hash.includes("#StaikaApp");
-    console.log(needToMoveToStaika);
+    let needToMoveToStaika = window.location.search.includes("staikaApp");
     const scrollPosition = $("#StaikaApp").outerHeight() - $("#section5").outerHeight();
-    console.log(scrollPosition);
+
     $("#fullpage").fullpage({
       sectionsColor: ["", "#fff", "#fff", "#fff", "#fff", "#fff", "#fff", "#fff", "#fff", "#fff"],
       anchors: ["firstPage", "secondPage", "3rdPage", "4thpage", "5thPage", "6thPage", "7thPage", "8thPage", "lastPage"],
