@@ -304,9 +304,13 @@ ui.page.common.prototype = {
     }
   },
   initFullpage: function () {
+    let needToMoveToStaika = window.location.hash.includes("#StaikaApp");
+    console.log(needToMoveToStaika);
+    const scrollPosition = $("#StaikaApp").outerHeight() - $("#section5").outerHeight();
+    console.log(scrollPosition);
     $("#fullpage").fullpage({
       sectionsColor: ["", "#fff", "#fff", "#fff", "#fff", "#fff", "#fff", "#fff", "#fff", "#fff"],
-      anchors: ["firstPage", "secondPage", "StaikaApp", "3rdPage", "4thpage", "5thPage", "6thPage", "7thPage", "8thPage", "lastPage"],
+      anchors: ["firstPage", "secondPage", "3rdPage", "4thpage", "5thPage", "6thPage", "7thPage", "8thPage", "lastPage"],
       menu: "#menu",
       // autoScrolling: false,
       slidesNavigation: true,
@@ -331,8 +335,18 @@ ui.page.common.prototype = {
         } else {
           $("body").removeClass("active-container");
         }
+
+        if (needToMoveToStaika && index === 2) {
+          const ins = $.fn.fp_scrolloverflow.iscrollHandler.iScrollInstances;
+          ins[0].scrollTo(0, scrollPosition);
+          needToMoveToStaika = false;
+        }
       },
     });
+
+    if (needToMoveToStaika) {
+      $.fn.fullpage.moveTo(2);
+    }
   },
   _ready: function () {
     var self = this;
@@ -359,9 +373,6 @@ ui.page.common.prototype = {
           },
         },
       ],
-    });
-    $(document).ready(function () {
-      // $.fn.fullpage.moveTo(2);
     });
     // $(".teamListLeader").memberInfoInput(teamListLeader);
     $(".teamListStrategic").memberInfoInput(teamListStrategic);
