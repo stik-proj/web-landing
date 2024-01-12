@@ -46,7 +46,7 @@ const teamListStrategyDesign = [
     position: "PO",
   },
   {
-    imgUrl: "/static/img/member/strategy design/Junyoung Park.png",
+    imgUrl: "/static/img/member/strategy design/Junyoung park.png",
     name: "Junyoung Park",
     position: "PM",
   },
