@@ -1428,6 +1428,9 @@
 .section06 .team_contents .team_list .team_member {
   padding: 2.393rem 0.63rem;
 }
+.section06 .team_contents .team_list.member .team_img {
+  width: 196px;
+}
 @media only screen and (max-width: 1024px) {
   .section06 .team_contents .team_list {
     /* margin: 0 auto; */
@@ -1446,7 +1449,7 @@
   .section06 .team_contents #section > .team_list:nth-child(1) .team_img {
     width: 157.5px;
   }
-  .section06 .team_contents .team_list .team_img {
+  .section06 .team_contents .team_list.member .team_img {
     width: 102px;
   }
 }
@@ -1534,10 +1537,14 @@
 }
 .section07 .partner_logo > ul {
   margin-top: 4.285rem;
+  padding-bottom: 10rem;
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
   align-items: center;
+}
+.section07 {
+  margin-top: 10rem;
 }
 .section07 .partner_logo > ul li {
   width: 210px;
