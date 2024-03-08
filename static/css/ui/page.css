@@ -448,7 +448,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: baseline;
-  padding-top: 120px;
+  /* padding-top: 8rem; */
 }
 .section02 .fp-tableCell {
   display: flex;
@@ -543,8 +543,6 @@
   text-align: left;
   margin-top: 5rem;
 }
-.eco_card_list ul {
-}
 .eco_card_list ul li {
   width: 23%;
   margin: 0 1%;
@@ -629,8 +627,10 @@
   }
 }
 .section04 .inner-contents {
-  padding-bottom: 20rem;
+  margin-bottom: 15rem;
+  margin-top: 15rem;
 }
+
 .roadmap {
   margin-left: 7.035rem;
 }
@@ -1340,10 +1340,14 @@
     margin-top: 0;
   }
 }
-.section06 .flex {
-  padding-top: 100px;
-  padding-bottom: 200px;
+.section06 .inner-contents {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
 }
+/* .section06 .flex {
+  margin-top: 100px;
+  margin-bottom: 200px;
+} */
 @media only screen and (max-width: 520px) {
   .section06 {
     min-width: 373;
@@ -1537,14 +1541,14 @@
 }
 .section07 .partner_logo > ul {
   margin-top: 4.285rem;
-  padding-bottom: 10rem;
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
   align-items: center;
 }
-.section07 {
-  margin-top: 10rem;
+.section07 .inner-contents {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
 }
 .section07 .partner_logo > ul li {
   width: 210px;
